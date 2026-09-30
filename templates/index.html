@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy</title>
+</head>
+<body>
+
+<h1>FitBuddy - AI Fitness Plan Generator</h1>
+
+<form action="/generate-workout" method="post">
+
+    Name:
+    <input type="text" name="username" required><br><br>
+
+    User ID:
+    <input type="text" name="user_id" required><br><br>
+
+    Age:
+    <input type="number" name="age" required><br><br>
+
+    Weight:
+    <input type="number" name="weight" required><br><br>
+
+    Goal:
+    <select name="goal">
+        <option>Weight Loss</option>
+        <option>Muscle Gain</option>
+        <option>General Wellness</option>
+    </select><br><br>
+
+    Intensity:
+    <select name="intensity">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+    </select><br><br>
+
+    <button type="submit">Generate Plan</button>
+
+</form>
+
+</body>
+</html>
